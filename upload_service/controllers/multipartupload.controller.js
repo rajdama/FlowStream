@@ -1,11 +1,14 @@
 const AWS = require("aws-sdk");
+const addVideoDetailsToDB = require("../db/db.js");
+const {
+  pushVideoForEncodingToKafka,
+} = require("./kafkapublisher.controller.js");
 
 // Initialize upload
 const initializeUpload = async (req, res) => {
   try {
     console.log("Initialising Upload");
     const { filename } = req.body;
-    console.log(filename);
 
     const s3 = new AWS.S3({
       accessKeyId: process.env.AWS_ACCESS_KEY_ID,
@@ -20,7 +23,6 @@ const initializeUpload = async (req, res) => {
       Key: filename,
       ContentType: "video/mp4",
     };
-    console.log(process.env.AWS_ACCESS_KEY_ID);
     const multipartParams = await s3
       .createMultipartUpload(createParams)
       .promise();
