@@ -29,6 +29,7 @@ const watchVideo = async (req, res) => {
     const videoKey = req.query.key; // Key of the video file in S3
     console.log("video key is ", videoKey);
     const signedUrl = await generateSignedUrl(videoKey);
+    console.log(signedUrl);
     res.json({ signedUrl });
     console.log(signedUrl);
   } catch (err) {

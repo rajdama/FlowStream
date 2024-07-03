@@ -10,7 +10,7 @@ class KafkaConfig {
       ssl: {
         ca: [
           fs.readFileSync(
-            path.resolve("C:/youtube-hhld/upload_service/kafka/ca.pem"),
+            path.resolve("C:/youtube-hhld/transcoder_service/ca.pem"),
             "utf-8"
           ),
         ],
@@ -56,6 +56,4 @@ class KafkaConfig {
   }
 }
 
-module.exports = {
-  KafkaConfig,
-};
+module.exports = KafkaConfig;

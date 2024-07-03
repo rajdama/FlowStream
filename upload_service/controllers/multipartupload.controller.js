@@ -117,7 +117,7 @@ const completeUpload = async (req, res) => {
       author,
       uploadResult.Location
     );
-    // pushVideoForEncodingToKafka(title, uploadResult.Location);
+    pushVideoForEncodingToKafka(filename);
     return res.status(200).json({ message: "Uploaded successfully!!!" });
   } catch (error) {
     console.log("Error completing upload :", error);
