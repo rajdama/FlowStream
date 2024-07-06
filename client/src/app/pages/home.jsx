@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import dynamic from "next/dynamic";
 import NavBar from "../components/navbar";
+import VideoPlayer from "./videoplayer";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const YoutubeHome = () => {
@@ -36,6 +37,14 @@ const YoutubeHome = () => {
           {videos.map((video) => (
             <div key={video.id} className="border rounded-md overflow-hidden">
               <div>
+                {/* <VideoPlayer
+                  s3Url={
+                    "https://raj-youtube.s3.ap-south-1.amazonaws.com/test.mp4"
+                  }
+                  hlsUrl={
+                    "https://raj-youtube.s3.ap-south-1.amazonaws.com/hls/test_mp4_master.m3u8"
+                  }
+                /> */}
                 <ReactPlayer
                   url={video.url}
                   width="360px"

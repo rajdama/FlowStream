@@ -9,7 +9,6 @@ const multer = require("multer");
 
 const upload = multer();
 console.log("------------------------------------------------- : )");
-console.log(upload);
 
 const router = express.Router();
 
