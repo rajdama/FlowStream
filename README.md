@@ -1,5 +1,3 @@
-https://github.com/user-attachments/assets/36472787-83a3-428e-a35a-e5c8733d8aa7
-
 ## Overview
 This project is aimed at designing a high-level architecture for a video streaming platform, focusing on the critical backend services required for video upload, transcoding, metadata storage, and adaptive video streaming.
 ## Key Responsibilities
@@ -22,7 +20,10 @@ This project is aimed at designing a high-level architecture for a video streami
 - End-to-End Workflow: From video upload to transcoding and final streaming, the project covers the entire flow required for a video streaming platform.
 - Efficient Storage and Retrieval: Leveraged AWS S3 and PostgreSQL to ensure efficient storage and retrieval of both video files and metadata.
 - Scalable Design: The architecture is designed to be scalable, allowing the system to handle a large number of users and video uploads simultaneously.
-## Future Work
 
+## Demo
+https://github.com/user-attachments/assets/36472787-83a3-428e-a35a-e5c8733d8aa7
+
+## Future Work
 - Enhance Metadata Management: Improve the way metadata is indexed and retrieved to support advanced search and filtering capabilities.
 - Implement Caching: Add caching mechanisms to improve performance for frequently accessed videos.
