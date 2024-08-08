@@ -1,6 +1,7 @@
+https://github.com/user-attachments/assets/36472787-83a3-428e-a35a-e5c8733d8aa7
 
 ## Overview
-This project is aimed at designing a high-level architecture for a YouTube-like platform, focusing on the critical backend services required for video upload, transcoding, metadata storage, and adaptive video streaming.
+This project is aimed at designing a high-level architecture for a video streaming platform, focusing on the critical backend services required for video upload, transcoding, metadata storage, and adaptive video streaming.
 ## Key Responsibilities
 ## 1. Video Upload and Transcoding Workflow
 
@@ -18,8 +19,7 @@ This project is aimed at designing a high-level architecture for a YouTube-like 
 
 - HLS Integration: Developed adaptive bitrate streaming by generating a master playlist file that holds URLs for all video resolutions. This enables smooth video playback by adjusting the video quality based on the user's network conditions.
 ## Project Highlights
-
-- End-to-End Workflow: From video upload to transcoding and final streaming, the project covers the entire flow required for a YouTube-like platform.
+- End-to-End Workflow: From video upload to transcoding and final streaming, the project covers the entire flow required for a video streaming platform.
 - Efficient Storage and Retrieval: Leveraged AWS S3 and PostgreSQL to ensure efficient storage and retrieval of both video files and metadata.
 - Scalable Design: The architecture is designed to be scalable, allowing the system to handle a large number of users and video uploads simultaneously.
 ## Future Work
